@@ -1,1 +1,1 @@
-Open index.html in your browser. Achievements toggle completion on click and update radars dynamically.
+Open index.html locally. Click achievements to toggle completion. Radars update accordingly. Replace assets/achievements/*.svg with your PNG slices if desired.
