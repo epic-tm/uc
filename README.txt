@@ -1,0 +1,1 @@
+Open index.html in your browser. Achievements toggle completion on click and update radars dynamically.
