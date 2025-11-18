@@ -1,1 +1,44 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Ultimate Completionist — Minecraft UI v2</title><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script><script src="https://d3js.org/d3.v7.min.js"></script><script src="data/data.js"></script></head><body><nav class="navbar"><div class="nav-left"><div class="logo">Ultimate Completionist</div></div><div class="nav-center"><div class="shard-tabs" id="shardTabs"></div></div><div class="nav-right"><div class="profile" id="profileHUD"><div class="player">Player: <span id="playerName">Epic</span></div><div class="xp-bar"><div id="xpFill"></div></div><div class="level">Level <span id="playerLevel">1</span> • <span id="playerXPPercent">0%</span></div></div></div></nav><main class="main-grid"><aside class="left-col"><div class="radar-card"><canvas id="mainRadar" width="360" height="360"></canvas><div class="radar-note">Click a domain to open sub-radar</div></div><div class="shard-stats" id="shardStats"></div></aside><section class="center-col"><div id="treeArea"><h3>Achievement Tree</h3><div id="achTree"></div></div><div id="achGridArea"><h3>Achievements</h3><div id="achGrid" class="ach-grid"></div></div></section><aside class="right-col"><div id="radarSubWrap"><h3>Sub Radar</h3><canvas id="subRadar" width="260" height="260"></canvas></div><div id="controls"><button id="resetBtn">Reset Progress</button></div></aside></main><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ultimate Completionist — Minecraft UI v2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="data/data.js"></script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-left"><div class="logo">Ultimate Completionist</div></div>
+  <div class="nav-center"><div class="shard-tabs" id="shardTabs"></div></div>
+  <div class="nav-right">
+    <div class="profile" id="profileHUD">
+      <div class="player">Player: <span id="playerName">Epic</span></div>
+      <div class="xp-bar"><div id="xpFill"></div></div>
+      <div class="level">Level <span id="playerLevel">1</span> • <span id="playerXPPercent">0%</span></div>
+    </div>
+  </div>
+</nav>
+<main class="main-grid">
+  <aside class="left-col">
+    <div class="radar-card">
+      <canvas id="mainRadar" width="360" height="360"></canvas>
+      <div class="radar-note">Click a domain to open sub-radar</div>
+    </div>
+    <div class="shard-stats" id="shardStats"></div>
+  </aside>
+  <section class="center-col">
+    <div id="treeArea"><h3>Achievement Tree</h3><div id="achTree"></div></div>
+    <div id="achGridArea"><h3>Achievements</h3><div id="achGrid" class="ach-grid"></div></div>
+  </section>
+  <aside class="right-col">
+    <div id="radarSubWrap"><h3>Sub Radar</h3><canvas id="subRadar" width="260" height="260"></canvas></div>
+    <div id="controls"><button id="resetBtn">Reset Progress</button></div>
+  </aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
